@@ -10,13 +10,10 @@ export class ShowSecretComponent implements OnInit {
 
   showSecret = false;
   log = [];
-  timeStamps = [];
-  clickCount = 0;
 
   toggleSecret() {
     this.showSecret = !this.showSecret;
-    this.log.push(this.clickCount++);
-    this.timeStamps.push(Date.now());
+    this.log.push(Date.now());
   }
 
   constructor() { }
