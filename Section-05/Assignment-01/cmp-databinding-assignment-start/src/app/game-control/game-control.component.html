@@ -1,0 +1,16 @@
+
+<div class="col-xs-1"></div>
+<button
+  class="col-xs-4 btn btn-primary"
+  [disabled]="intervalStarted"
+  (click)="startInterval()"
+  > Start
+</button>
+<div class="col-xs-2"></div>
+<button
+  class="col-xs-4 btn btn-danger"
+  [disabled]="!intervalStarted"
+  (click)="stopInterval()"
+  > Stop
+</button>
+<div class="col-xs-1"></div>
