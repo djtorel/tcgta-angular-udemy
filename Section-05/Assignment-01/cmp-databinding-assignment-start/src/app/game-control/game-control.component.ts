@@ -27,7 +27,7 @@ export class GameControlComponent implements OnInit {
   }
 
   stopInterval() {
-    if (this.interval) {
+    if (this.interval._id) {
       clearInterval(this.interval._id);
     }
     this.intervalStarted = false;
